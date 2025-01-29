@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('https://www.w3schools.com/w3images/mountains.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
 
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+
+    .subtext {
+      font-size: 1.25rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    .countdown {
+      margin-top: 20px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .countdown div {
+      padding: 10px;
+      background-color: #ff6600;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .countdown div span {
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="content">
+      <h1>We're Getting Ready!</h1>
+      <p class="subtext">Our website is under development. Stay tuned for something amazing!</p>
+
+      <div class="countdown" id="countdown">
+        <div>
+          <span id="days">00</span>
+          <span>Days</span>
+        </div>
+        <div>
+          <span id="hours">00</span>
+          <span>Hours</span>
+        </div>
+        <div>
+          <span id="minutes">00</span>
+          <span>Minutes</span>
+        </div>
+        <div>
+          <span id="seconds">00</span>
+          <span>Seconds</span>
+        </div>
+      </div>
+
+      <div class="footer">We'll be live soon. Follow us on <a href="https://twitter.com/yourproject" target="_blank" style="color: #fff;">Twitter</a> for updates!</div>
+    </div>
+  </div>
+
+  <script>
+    // Countdown Timer
+    const countdownDate = new Date("Feb 15, 2025 00:00:00").getTime();
+
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countdownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "We're Live!";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>

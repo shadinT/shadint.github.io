@@ -82,7 +82,8 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px; /* Added gap for consistent spacing */
+            margin-top: 30px; /* Add space above projects */
         }
 
         .project-item {
@@ -92,6 +93,12 @@
             border-radius: 8px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-bottom: 30px; /* Add bottom margin for better spacing between rows */
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px); /* Slight hover effect for better interaction */
         }
 
         .project-item h3 {
@@ -179,13 +186,13 @@
             <div class="project-item">
                 <h3>Project 3</h3>
                 <p>A short description of Project 3.</p>
-                <a href="projects/project3.html" class="btn">View Project</a> <!-- Button for Project 3 -->
+                <a href="projects/project3.html" class="btn">View Project</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>Made by <a href="https://github.com/shadint" target="_blank">Shadin</a></p>
+        <p>Made with ❤️ by <a href="https://github.com/shadint" target="_blank">Shadin</a></p>
     </footer>
 
 </body>

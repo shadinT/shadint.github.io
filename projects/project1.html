@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Project - Raspberry Pi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 30px;
+            color: #2575fc;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .content {
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .step {
+            margin: 40px 0;
+        }
+
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2575fc;
+            color: white;
+            padding: 6px 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6a11cb;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LED Control Project - Using Raspberry Pi 3</h1>
+    </header>
+
+    <div class="content">
+        <h2>LED Project Overview</h2>
+        <p>This project demonstrates how to control an LED using a Raspberry Pi 3. We will go through the following steps:</p>
+        
+        <!-- Step 1: LED Off -->
+        <div class="step" id="led-off">
+            <h2>Step 1: LED OFF</h2>
+            <p>In this step, the LED will be turned off using the Raspberry Pi GPIO pins.</p>
+            <div class="video-container">
+                <h3>Watch the video demonstration for turning LED off:</h3>
+                <video width="100%" controls>
+                    <source src="video/led-off.mp4" type="video/mp4"> <!-- Ensure the video file is in the right path -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Step 2: LED On -->
+        <div class="step" id="led-on">
+            <h2>Step 2: LED ON</h2>
+            <p>Here, the LED will be turned on. We will control the GPIO pin to send a signal to the LED, making it light up.</p>
+            <div class="video-container">
+                <h3>Watch the video demonstration for turning LED on:</h3>
+                <video width="100%" controls>
+                    <source src="video/led-on.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Step 3: LED Blinking -->
+        <div class="step" id="led-blinking">
+            <h2>Step 3: LED Blinking</h2>
+            <p>In this step, we will make the LED blink at a specified interval using Python code and Raspberry Pi GPIO.</p>
+            <div class="video-container">
+                <h3>Watch the video demonstration for LED blinking:</h3>
+                <video width="100%" controls>
+                    <source src="video/led-blinking.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Step 4: LED Timer -->
+        <div class="step" id="led-timer">
+            <h2>Step 4: LED Timer</h2>
+            <p>Here we will introduce a timer to control the LED, such that the LED will turn off after a specific time period.</p>
+            <div class="video-container">
+                <h3>Watch the video demonstration for LED timer:</h3>
+                <video width="100%" controls>
+                    <source src="video/led-timer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <p>Explore how we can control the LED in various ways using the Raspberry Pi and GPIO pins!</p>
+        <p><a href="index.html" class="btn">Back to Projects</a></p>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ by <a href="https://github.com/shadint" target="_blank">Shadin</a></p>
+    </footer>
+
+</body>
+</html>
 

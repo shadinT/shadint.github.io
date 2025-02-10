@@ -3,72 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Shadin</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
             text-align: center;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
+            background: rgba(0, 0, 0, 0.7);
             padding: 20px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin-top: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
         }
 
         .content {
-            background-color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
             padding: 30px;
-            margin: 20px auto;
+            margin: 50px auto;
             width: 80%;
             max-width: 800px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        li:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #ff6600;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background: rgba(0, 0, 0, 0.7);
             padding: 10px;
             position: fixed;
             width: 100%;
             bottom: 0;
-            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>About Me</h1>
-    </header>
+    <header>About Me</header>
 
     <div class="content">
-        <h2>Hello, I'm Shadin!</h2>
+        <h2>Hello, I'm Shadin! 🚀</h2>
         <p>I'm a passionate web developer with a love for creating beautiful and functional websites. I enjoy solving problems and building things that help others.</p>
         
         <p>Here are some things I enjoy:</p>
         <ul>
-            <li>Coding and web development</li>
-            <li>Exploring new tech tools and frameworks</li>
-            <li>Reading books like manga and talking with friends always keep me busy</li>
-            <li>I love my family </li>
+            <li>💻 Coding and web development</li>
+            <li>🛠 Exploring new tech tools and frameworks</li>
+            <li>📖 Reading manga and chatting with friends</li>
+            <li>❤️ Spending time with my family</li>
         </ul>
 
-        <p>Feel free to reach out to me on <a href="https://github.com/shadint" target="_blank">GitHub</a> or send me an email at <a href="mailto:your-email@example.com">the server is has cut off.</a>.</p>
+        <p>Connect with me on <a href="https://github.com/shadint" target="_blank">GitHub</a> or send me an email at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
     </div>
 
     <footer>
         <p>Made by Shadin</p>
     </footer>
-
 </body>
 </html>

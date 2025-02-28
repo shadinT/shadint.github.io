@@ -5,73 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadin's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
         body {
-            background: #0f172a;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
             text-align: center;
             overflow-x: hidden;
         }
         header {
             padding: 20px;
-            font-size: 3em;
+            font-size: 2.8em;
             font-weight: bold;
-            background: #1e293b;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 50px auto;
             padding: 20px;
-            text-align: center;
         }
         .intro {
             padding: 50px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
             animation: fadeIn 1.5s ease-in-out;
         }
         .btn {
             display: inline-block;
-            background: #4f46e5;
-            color: white;
+            background: #ffcc00;
+            color: #222;
             padding: 12px 24px;
-            border-radius: 10px;
+            border-radius: 8px;
             font-weight: bold;
             text-decoration: none;
-            transition: 0.3s ease-in-out;
+            transition: 0.3s;
         }
         .btn:hover {
-            background: #6366f1;
+            background: #ff6600;
             transform: scale(1.1);
         }
         .projects {
             margin-top: 50px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
         .project {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease-in-out;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
         }
         .project:hover {
             transform: translateY(-10px);
         }
         footer {
-            background: #1e293b;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 15px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -91,27 +90,27 @@
             <p>Welcome to my professional portfolio. Here you'll find my projects, achievements, and more.</p>
             <p><a href="bio/bio.html" class="btn">About Me</a></p>
         </div>
-        <h2 style="margin-top: 60px;">My Projects</h2>
+        <h2>My Projects</h2>
         <div class="projects">
             <div class="project">
-                <h3>Project Alpha</h3>
-                <p>An innovative and game-changing project.</p>
+                <h3>Project 1</h3>
+                <p>An innovative and exciting project.</p>
                 <a href="projects/project1.html" class="btn">View</a>
             </div>
             <div class="project">
-                <h3>Project Beta</h3>
-                <p>A next-level solution redefining standards.</p>
+                <h3>Project 2</h3>
+                <p>Another cutting-edge creation.</p>
                 <a href="projects/project2.html" class="btn">View</a>
             </div>
             <div class="project">
-                <h3>Project Gamma</h3>
-                <p>A breakthrough creation with unmatched features.</p>
+                <h3>Project 3</h3>
+                <p>A standout project with unique features.</p>
                 <a href="projects/project3.html" class="btn">View</a>
             </div>
         </div>
     </div>
     <footer>
-        <p>Made by <a href="https://github.com/shadint" target="_blank" style="color: #4f46e5; text-decoration: none;">Shadin</a></p>
+        <p>Made by <a href="https://github.com/shadint" target="_blank" style="color: #ffcc00; text-decoration: none;">Shadin</a></p>
     </footer>
 </body>
 </html>
